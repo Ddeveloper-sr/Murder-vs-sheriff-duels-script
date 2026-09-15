@@ -1,27 +1,18 @@
-local Config = {
-    HubName = "Murder Sheriff Hub",
-    Version = "V1.0.0",
+local Config = {}
 
-    UI = {
-        Width = 520,
-        Height = 360,
-        ToggleKey = Enum.KeyCode.RightShift,
-    },
+Config.Round = {
+    MinimumPlayers = 2,
+    Intermission = 10,
+    Duration = 120,
+}
 
-    Targeting = {
-        MaxDistance = 150,
-        TeamOnly = true,
-    },
+Config.Targeting = {
+    MaximumDistance = 150,
+}
 
-    AutoShoot = {
-        Enabled = false,
-        FireCooldown = 0.25,
-    },
-
-    Visuals = {
-        Enabled = true,
-        ShowRoles = true,
-    },
+Config.Weapon = {
+    MaximumDistance = 150,
+    FireCooldown = 0.35,
 }
 
 return Config
